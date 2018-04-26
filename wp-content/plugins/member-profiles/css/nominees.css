@@ -1,0 +1,224 @@
+.profile-container {
+	position: relative;
+	display: block;
+}
+
+.profile li a:before {
+	opacity: 0;
+	display: block;
+	background: rgba(0, 0, 0, .75);
+	position: absolute;
+	content: '';
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	transition: all 0.25s ease-in-out;
+	-webkit-transition: all 0.25s ease-in-out;
+	-moz-transition: all 0.25s ease-in-out;
+	-o-transition: all 0.25s ease-in-out;
+}
+
+.profile li a:hover:before {
+	opacity: 1;
+	transition: all 0.25s ease-in-out;
+	-webkit-transition: all 0.25s ease-in-out;
+	-moz-transition: all 0.25s ease-in-out;
+	-o-transition: all 0.25s ease-in-out;
+}
+
+.entry-content ul.profile {
+	padding: 0;
+	list-style: none;
+}
+
+.read-bio-flash {
+	opacity: 0;
+	transition: all 0.25s ease-in-out;
+	-webkit-transition: all 0.25s ease-in-out;
+	-moz-transition: all 0.25s ease-in-out;
+	-o-transition: all 0.25s ease-in-out;
+	position: absolute;
+	transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-webkit-transform: translate(-50%,-50%);
+	-moz-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	left: 50%;
+	top: 50%;	text-align: center;
+	color: #fff!important;
+	font-size: 18px;
+}
+
+.profile li a:hover .read-bio-flash {
+	opacity: 1;
+	transition: all 0.25s ease-in-out;
+	-webkit-transition: all 0.25s ease-in-out;
+	-moz-transition: all 0.25s ease-in-out;
+	-o-transition: all 0.25s ease-in-out;
+}
+
+.panel {
+	transform: translateX(0);
+	-webkit-transform: translateX(0);
+	-o-transform: translateX(0);
+	-moz-transform: translateX(0);
+	-ms-transform: translateX(0);
+}
+
+p.name-tag {
+	padding: 10px 15px 6px 15px!important;
+	background: #b7dd79;
+	color: #fff;
+	font-weight: 700;
+	font-size: 18px;
+}
+
+.title-tag {
+	background: #298fc2;
+	padding: 5px 15px 3px 15px!important;
+	color: #fff;
+}
+
+.panel h3 {
+	font-weight: 700;
+}
+
+.panel h3, .panel h4 {
+	color: #fff;
+}
+
+.panel h4 {
+	margin-bottom: 25px;
+}
+
+p.name-tag:last-of-type {
+	padding-bottom: 8px;
+}
+
+#et_builder_outer_content .panel, .panel {
+	position: fixed;
+	right: -50%;
+	top: 0;
+	width: 50%;
+	height: 100%;
+	overflow-y: scroll;
+	transition: all 0.5s ease-in-out;
+	-webkit-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	background: #6c1d45;
+	padding: 30px;
+	z-index: 999999;
+	text-align: left;
+	-webkit-overflow-scrolling: touch;
+	color: #fff;
+	visibility: hidden;
+}
+#et_builder_outer_content .panel.show, .panel.show {
+	transform: translateX(-100%);
+	-webkit-transform: translateX(-100%);
+	-o-transform: translateX(-100%);
+	-moz-transform: translateX(-100%);
+	-ms-transform: translateX(-100%);
+	transition: all 0.5s ease-in-out;
+	-webkit-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	visibility: visible;
+}
+
+#et_builder_outer_content .panel h2, .panel h2 {
+	font-weight: bold;
+}
+
+.profile .fa-close {
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	font-size: 30px;
+}
+
+.page-overlay {
+	background: rgba(255, 255, 255, .75);
+	opacity: 0;
+	visibility: hidden;
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	content: '';
+	left: 0;
+	top: 0;
+	transition: all 0.5s ease-in-out;
+	z-index: 9;
+}
+
+.reveal .page-overlay {
+	opacity: 1;
+	visibility: visible;
+	transition: all 0.5s ease-in-out;
+}
+
+body.reveal {
+	overflow-y: hidden;
+}
+
+.profile li {
+  float: left;
+  width: 30%;
+  vertical-align: top;
+  margin-right: 5%;
+  margin-bottom: 5%;
+}
+
+.profile li:nth-child(3n) {
+  margin-right: 0;
+}
+
+.profile img {
+	display: block;
+}
+
+@media (max-width: 980px) {
+
+.profile li {
+  width: 47.5%;
+}
+
+.profile li:nth-child(3n) {
+  margin-right: 5%;
+}
+
+.profile li:nth-child(2n) {
+  margin-right: 0;
+}
+}
+
+@media (max-width: 480px) {
+
+.profile li {
+  width: 100%;
+  margin-right: 0;
+  float: none;
+}
+
+.profile li:nth-child(3n) {
+  margin-right: 0;
+}
+
+.profile li:nth-child(2n) {
+  margin-right: 0;
+}
+
+.profile li:last-of-type {
+	margin-bottom: 0;
+}
+}
+
+@media (max-width: 812px) {
+
+.panel {
+	width: 100%;
+	right: -100%;
+}
+}

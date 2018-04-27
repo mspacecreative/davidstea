@@ -291,6 +291,21 @@ html[lang="en-CA"] .english-button, html[lang="fr-CA"] .french-button {
 }
 }
 
+@media (max-width: 320px) {
+
+#top .et_pb_fullwidth_header {
+	vertical-align: bottom;
+}
+}
+
+@media (max-width: 812px) and (orientation: landscape) {
+
+#top {
+	height: auto!important;
+	padding: 100px 0 50px;
+}
+}
+
 @media (min-width: 981px) {
 
 #top-menu li.nav-mobile {

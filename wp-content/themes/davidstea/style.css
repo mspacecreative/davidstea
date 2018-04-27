@@ -270,7 +270,7 @@ html[lang="en-CA"] .english-button, html[lang="fr-CA"] .french-button {
 }
 
 .et_pb_fullwidth_header_0.et_pb_fullwidth_header .header-content h1 {
-	font-size: 40px;
+	font-size: 40px!important;
 }
 
 .date {

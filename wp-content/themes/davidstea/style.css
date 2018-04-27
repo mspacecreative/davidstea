@@ -9,7 +9,7 @@
 */
 
 body {
-	font-family: "OmnesMedium", "omnes_regularregular", Omnes, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "omnes-pro", Omnes, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .uppercase {
@@ -276,5 +276,12 @@ html[lang="en-CA"] .english-button, html[lang="fr-CA"] .french-button {
 .et_fixed_nav #main-header {
 	position: fixed;
 	transition: all 0.5s ease-in-out;
+}
+}
+
+@media (min-width: 981px) {
+
+.nav-mobile {
+	display: none;
 }
 }

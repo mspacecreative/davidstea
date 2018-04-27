@@ -253,6 +253,10 @@ html[lang="en-CA"] .english-button, html[lang="fr-CA"] .french-button {
 	
 }
 
+.et_pb_fullwidth_header .et_pb_fullwidth_header_container, .et_pb_row {
+	width: 90%;
+}
+
 .bio.reveal {
 	visibility: visible;
 	transition: all 0.5s ease-in-out;
@@ -287,5 +291,16 @@ html[lang="en-CA"] .english-button, html[lang="fr-CA"] .french-button {
 
 #top-menu li.nav-mobile {
 	display: none;
+}
+}
+
+@media (max-width: 767px) {
+
+.et_pb_fullwidth_header .et_pb_fullwidth_header_container.left .header-content {
+	margin: 0;
+}
+
+.et_pb_fullwidth_header .et_pb_fullwidth_header_container.left .header-content {
+	padding: 0;
 }
 }

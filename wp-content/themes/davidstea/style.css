@@ -127,6 +127,7 @@ p {
 	border-radius: 0 0 0 100%;
 	background: #298fc2;
 	line-height: 1;
+	position: fixed;
 }
 
 .scroll .lang-button {

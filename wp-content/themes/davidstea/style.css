@@ -117,8 +117,23 @@ p {
 	font-size: 16px;
 }
 
-.question {
-	max-width: 90%;
+.lang-button {
+	position: fixed;
+	padding: 15px;
+	color: #000;
+	transition: all 0.5s ease-in-out;
+	z-index: 99999;
+	right: 0;
+	top: 0;
+}
+
+.scroll .lang-button {
+	color: #fff;
+	transition: all 0.5s ease-in-out;
+}
+
+html[lang="en-CA"] .english-button, html[lang="fr-CA"] .french-button {
+	display: none;
 }
 
 #our-plan:before {

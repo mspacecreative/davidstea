@@ -4,8 +4,8 @@
 		$loop = new WP_Query($args);
 		if ( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post();
 	?>
-	<li>
-  	<span class="profile-container read-bio">
+	<li class="animatedParent animateOnce">
+  	<span class="profile-container read-bio animated fadeIn slower">
     	<a href="javascript:void(0)">
     		<?php if ( has_post_thumbnail() ) {
     	 			    the_post_thumbnail();

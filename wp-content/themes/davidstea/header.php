@@ -28,6 +28,9 @@
 </head>
 <body <?php body_class(); ?>>
 
+<a href="http://localhost/davidstea/fr/" class="lang-button french-button">FR</a>
+<a href="http://localhost/davidstea/en/" class="lang-button english-button">EN</a>
+
 <?php ob_start(); ?>
 		<header id="main-header" data-height-onload="<?php echo esc_attr( et_get_option( 'menu_height', '66' ) ); ?>">
 			<div class="container clearfix et_menu_container">

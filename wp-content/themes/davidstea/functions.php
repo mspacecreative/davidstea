@@ -6,11 +6,17 @@ function my_theme_enqueue_styles() {
     wp_register_script('my-scripts', get_stylesheet_directory_uri() . '/js/scripts.js', array('jquery'), '1.0.0', true);
     wp_enqueue_script('my-scripts');
     
-    wp_register_script('fontawesome', 'https://use.fontawesome.com/6ccd600e51.js', array('jquery'), '1.0.0', true); // Custom scripts
+    wp_register_script('fontawesome', 'https://use.fontawesome.com/6ccd600e51.js', array('jquery'), '1.0.0', true);
     wp_enqueue_script('fontawesome');
+    
+    wp_register_script('animate-js', get_stylesheet_directory_uri() . '/js/css3-animate-it.js', array('jquery'), '1.0.0', true);
+    wp_enqueue_script('animate-js');
     
     wp_register_style('typekit', 'https://use.typekit.net/ucx3vdm.css', array(), '1.0', 'all');
     wp_enqueue_style('typekit');
+    
+    wp_register_style('animate', get_stylesheet_directory_uri() . '/css/animations.css', array(), '1.0', 'all');
+    wp_enqueue_style('animate');
 
 }
 

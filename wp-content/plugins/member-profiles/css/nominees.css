@@ -1,12 +1,14 @@
 .profile-container {
 	position: relative;
 	display: block;
+	overflow: hidden;
 }
 
 .profile li a:before {
 	opacity: 0;
+	visibility: hidden;
 	display: block;
-	background: rgba(0, 0, 0, .75);
+	background: rgba(255, 143, 28, .75);
 	position: absolute;
 	content: '';
 	left: 0;
@@ -17,10 +19,20 @@
 	-webkit-transition: all 0.25s ease-in-out;
 	-moz-transition: all 0.25s ease-in-out;
 	-o-transition: all 0.25s ease-in-out;
+	z-index: 1;
 }
 
 .profile li a:hover:before {
 	opacity: 1;
+	visibility: visible;
+	transition: all 0.25s ease-in-out;
+	-webkit-transition: all 0.25s ease-in-out;
+	-moz-transition: all 0.25s ease-in-out;
+	-o-transition: all 0.25s ease-in-out;
+}
+
+.profile li:hover img {
+	transform: scale(1.1);
 	transition: all 0.25s ease-in-out;
 	-webkit-transition: all 0.25s ease-in-out;
 	-moz-transition: all 0.25s ease-in-out;
@@ -48,10 +60,13 @@
 	top: 50%;	text-align: center;
 	color: #fff!important;
 	font-size: 18px;
+	z-index: 2;
+	visibility: hidden;
 }
 
 .profile li a:hover .read-bio-flash {
 	opacity: 1;
+	visibility: visible;
 	transition: all 0.25s ease-in-out;
 	-webkit-transition: all 0.25s ease-in-out;
 	-moz-transition: all 0.25s ease-in-out;
@@ -137,6 +152,7 @@ p.name-tag:last-of-type {
 	right: 20px;
 	top: 20px;
 	font-size: 30px;
+	cursor: pointer;
 }
 
 .page-overlay {
@@ -177,6 +193,10 @@ body.reveal {
 
 .profile img {
 	display: block;
+	transition: all 0.25s ease-in-out;
+	-webkit-transition: all 0.25s ease-in-out;
+	-moz-transition: all 0.25s ease-in-out;
+	-o-transition: all 0.25s ease-in-out;
 }
 
 @media (max-width: 980px) {

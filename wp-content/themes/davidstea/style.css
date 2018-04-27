@@ -285,7 +285,7 @@ html[lang="en-CA"] .english-button, html[lang="fr-CA"] .french-button {
 
 @media (min-width: 981px) {
 
-.nav-mobile {
+#top-menu li.nav-mobile {
 	display: none;
 }
 }

@@ -269,6 +269,10 @@ html[lang="en-CA"] .english-button, html[lang="fr-CA"] .french-button {
 	display: none;
 }
 
+.et_pb_module_header {
+	font-size: 40px;
+}
+
 .date {
 	display: block;
 	margin-bottom: 10px;

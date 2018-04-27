@@ -253,7 +253,7 @@ html[lang="en-CA"] .english-button, html[lang="fr-CA"] .french-button {
 	
 }
 
-.et_pb_fullwidth_header .et_pb_fullwidth_header_container, .et_pb_row {
+#main-header .container, .et_pb_fullwidth_header .et_pb_fullwidth_header_container, .et_pb_row {
 	width: 90%;
 }
 

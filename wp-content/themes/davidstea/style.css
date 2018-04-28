@@ -42,6 +42,14 @@ body {
 	font-family: 'object-fit: cover;';
 }
 
+.content-overlay {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 1;
+	width: 100%;
+}
+
 .article-link:hover, .et_button_no_icon .et_pb_button:hover {
 	background: rgba(51, 122, 183, .5)!important;
 	transition: all 0.25s ease-in-out;
@@ -193,10 +201,10 @@ html[lang="en-CA"] .english-button, html[lang="fr-CA"] .french-button {
 	content: '';
 }
 
-#top {
+/*#top {
 	display: table;
 	width: 100%;
-}
+}*/
 
 #top .et_pb_fullwidth_header {
 	display: table-cell;

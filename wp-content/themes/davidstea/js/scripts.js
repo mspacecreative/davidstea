@@ -6,6 +6,12 @@ $(function () {
  
  $(document).ready(function () {
  	videoHeight();
+ 	
+ 	if (Modernizr.video) {
+ 	  $('.poster-img').hide();
+ 	} else {
+ 	  $('.splash-video').hide();
+ 	}
  });
  
  $(window).resize(function () {
@@ -21,13 +27,5 @@ $(function () {
          $("#main-header, body").removeClass("scroll");
      }
  });
- 
- if (Modernizr.video) {
-   $('.poster-img').hide();
-   $('.splash-video').show();
- } else {
-   $('.splash-video').hide();
-   $('.poster-img').show();
- }
 
 });

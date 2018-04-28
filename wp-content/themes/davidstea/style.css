@@ -203,6 +203,7 @@ html[lang="en-CA"] .english-button, html[lang="fr-CA"] .french-button {
 .video-container.et_pb_fullwidth_code.et_pb_module .et_pb_code_inner {
 	height: 100%;
 	z-index: auto;
+	overflow: hidden;
 }
 
 .video-container.et_pb_fullwidth_code.et_pb_module {

@@ -160,6 +160,15 @@ html[lang="en-CA"] .english-button, html[lang="fr-CA"] .french-button {
 	display: none;
 }
 
+.poster-img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 100%;
+	height: 100%;
+	transform: translate(-50%,-50%);
+}
+
 #our-plan:before {
 	background-color: rgba(206,15,105,0.75);
 	position: absolute;
@@ -193,12 +202,12 @@ html[lang="en-CA"] .english-button, html[lang="fr-CA"] .french-button {
 
 .video-container.et_pb_fullwidth_code.et_pb_module .et_pb_code_inner {
 	height: 100%;
+	z-index: auto;
 }
 
 .video-container.et_pb_fullwidth_code.et_pb_module {
 	height: 100%;
 	z-index: auto;
-	overflow: hidden;
 }
 
 #our-nominees:before, #faq:before {

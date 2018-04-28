@@ -29,6 +29,19 @@ body {
 	border-radius: 0!important;
 }
 
+.splash-video {
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	position: relative;
+}
+
+.splash-video {
+	object-fit: cover;
+	font-family: 'object-fit: cover;';
+}
+
 .article-link:hover, .et_button_no_icon .et_pb_button:hover {
 	background: rgba(51, 122, 183, .5)!important;
 	transition: all 0.25s ease-in-out;

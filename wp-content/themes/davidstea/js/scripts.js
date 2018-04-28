@@ -21,5 +21,11 @@ $(function () {
          $("#main-header, body").removeClass("scroll");
      }
  });
+ 
+ if (Modernizr.video) {
+   // supported
+ } else {
+   // not-supported
+ }
 
 });

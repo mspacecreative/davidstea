@@ -17,7 +17,7 @@ body {
 }
 
 .article-link, .et_button_no_icon .et_pb_button {
-	padding: 9px 12px 5px 12px!important;
+	padding: 5px 12px 8px 12px!important;
 	border: 2px solid #337ab7;
 	color: #337ab7!important;
 	display: inline-block!important;
@@ -37,7 +37,7 @@ body {
 	-o-transition: all 0.25s ease-in-out;
 	color: #fff!important;
 	border: 2px solid #337ab7!important;
-	padding: 9px 12px 5px 12px!important;
+	padding: 5px 12px 8px 12px!important;
 }
 
 #main-header {

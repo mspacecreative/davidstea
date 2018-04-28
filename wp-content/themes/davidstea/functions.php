@@ -17,6 +17,9 @@ function my_theme_enqueue_styles() {
     
     wp_register_style('animate', get_stylesheet_directory_uri() . '/css/animations.css', array(), '1.0', 'all');
     wp_enqueue_style('animate');
+    
+    wp_register_script('modernizr', get_stylesheet_directory_uri() . '/js/modernizr-custom.js', array('jquery'), '1.0.0');
+    wp_enqueue_script('modernizr');
 
 }
 

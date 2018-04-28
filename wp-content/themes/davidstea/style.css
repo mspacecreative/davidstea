@@ -191,8 +191,8 @@ html[lang="en-CA"] .english-button, html[lang="fr-CA"] .french-button {
 	z-index: 1;
 }
 
-.video-container .et_pb_inner {
-	height: auto;
+.video-container .et_pb_code_inner {
+	height: 100%;
 }
 
 #our-nominees:before, #faq:before {

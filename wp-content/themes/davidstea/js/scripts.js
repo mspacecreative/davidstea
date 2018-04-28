@@ -24,8 +24,10 @@ $(function () {
  
  if (Modernizr.video) {
    $('.poster-img').hide();
+   $('.splash-video').show();
  } else {
    $('.splash-video').hide();
+   $('.poster-img').show();
  }
 
 });

@@ -6,12 +6,6 @@ $(function () {
  
  $(document).ready(function () {
  	videoHeight();
- 	
- 	if (Modernizr.video) {
- 	  $('.poster-img').hide();
- 	} else {
- 	  $('.splash-video').hide();
- 	}
  });
  
  $(window).resize(function () {

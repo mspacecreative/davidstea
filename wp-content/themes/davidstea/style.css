@@ -206,6 +206,13 @@ html[lang="en-CA"] .english-button, html[lang="fr-CA"] .french-button {
 	overflow: hidden;
 }
 
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+
+.splash-video {
+	height: 100%;
+}
+}
+
 .video-container.et_pb_fullwidth_code.et_pb_module {
 	height: 100%;
 	z-index: auto;

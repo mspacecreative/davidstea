@@ -168,6 +168,8 @@ html[lang="en-CA"] .english-button, html[lang="fr-CA"] .french-button {
 	height: 100%;
 	background-attachment: scroll;
 	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 #our-plan:before {

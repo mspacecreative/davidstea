@@ -23,9 +23,9 @@ $(function () {
  });
  
  if (Modernizr.video) {
-   // supported
+   $('.poster-img').hide();
  } else {
-   // not-supported
+   $('.splash-video').hide();
  }
 
 });
